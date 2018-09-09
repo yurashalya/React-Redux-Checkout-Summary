@@ -34,7 +34,7 @@ export default class ItemDetails extends Component {
                 </Media.Left>
                 <Media.Body>
                   <p>
-                    Игровой стул серии: OFB ES-3085, гарантия и качество от производителя.
+                    Игровое кресло серии: OFB ES-3085, гарантия и качество от производителя.
                   </p>
                   <Row className="show-grid">
                     <Col md={6}>

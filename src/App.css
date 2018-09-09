@@ -18,6 +18,7 @@
 
 .promo-code-button:focus {
   outline: none;
+  text-decoration: none !important;
 }
 
 .item-details-button {
@@ -31,4 +32,13 @@
 .price-strike {
   text-decoration-line: line-through;
   color: grey;
+}
+
+
+.promo-code-button {
+  color: #343538;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none !important;
 }
