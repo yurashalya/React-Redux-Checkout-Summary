@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { Grid } from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div> 
-        <h1>Hello World</h1>
+      <div className="container"> 
+        <Grid className="purchase-card">
+          <h1>Hello Yura</h1>
+        </Grid>
       </div>
     );
   }
