@@ -11,3 +11,24 @@
 .show-grid {
   padding-bottom: 1.5em;
 }
+
+.item-details-button:focus {
+  outline: none;
+}
+
+.promo-code-button:focus {
+  outline: none;
+}
+
+.item-details-button {
+  color: #343538;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.price-strike {
+  text-decoration-line: line-through;
+  color: grey;
+}
