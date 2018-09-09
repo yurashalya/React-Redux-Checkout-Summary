@@ -25,7 +25,7 @@ export default class PickupSavings extends Component {
 			<Row className="show-grid"> 
 				<Col md={6}>
 					<OverlayTrigger placement="bottom" overlay={tooltip}> 
-						<div style={styles.pickupSavings}>Подобрать сохранения</div>
+						<div style={styles.pickupSavings}>Скидка</div>
 					</OverlayTrigger>
 				</Col>
 				<Col style={styles.totalSavings} md={6}> 
