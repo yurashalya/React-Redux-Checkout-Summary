@@ -8,13 +8,16 @@ import ItemDetails from './components/ItemDetalis/ItemDetalis';
 import PromoCodeDiscount from './components/PromoCode/Promo';
 import './App.css';
 
+import { connect } from 'react-redux';
+import { handleChange } from './actions/promoCodeActions';
+
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      total: 100,
-      PickupSavings: -4.15,
+      total: 364,
+      PickupSavings: -4.55,
       taxes: 0,
       estimatedTotal: 0,
       disablePromoButton: false
@@ -31,6 +34,19 @@ class App extends Component {
         });
       }
     );
+  };
+
+   giveDiscountHandler = () => {
+    if (this.props.promoCode === 'SHALYA') {
+      this.setState(
+        { estimatedTotal: this.state.estimatedTotal * 0.9 },
+        function() {
+          this.setState({
+            disablePromoButton: true
+          });
+        }
+      );
+    }
   };
 
 
@@ -56,4 +72,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  promoCode: state.promoCode.value
+});
+
+export default connect(mapStateToProps, { handleChange })(App);
