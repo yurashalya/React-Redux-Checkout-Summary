@@ -51,7 +51,7 @@ render() {
                       disabled={this.props.isDisabled}
                       onClick={this.props.giveDiscount}
                     >
-                      Apply
+                      Купить
                     </Button>
                   </Form>
                 </Col>
